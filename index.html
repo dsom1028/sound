@@ -2,7 +2,7 @@
 
 <!doctype html>
 <head>
-	<title>BH Web Audio 4th</title>
+	<title>som's music</title>
 	<script src="./soundV.js"></script>
 	<style>
 		html,body,div,img{margin:0; padding:0;}
@@ -17,7 +17,7 @@
 			0%{ }
 			100%{ transform: rotate(-360deg)}
 		}
-		.circle img{width:100%; height:auto;}
+		.cImg{width:100%; height:auto;}
 	</style>
 </head>
 <body>
@@ -42,11 +42,11 @@
 		(function loop(){ 
  
 			var vol = newSound.getGain() / 10; 
-			circle.style.width = vol + "px";
-			circle.style.height = vol + "px";
-			circle.style.borderRadius = vol/2 + "px";
-			circle.style.left = "calc(50% - " + (vol/2) + "px)";
-			circle.style.top = 300 - (vol/2) + "px";
+			cImg.style.width = vol + "px";
+			cImg.style.height = vol + "px";
+			cImg.style.borderRadius = vol/2 + "px";
+			cImg.style.left = "calc(50% - " + (vol/2) + "px)";
+			cImg.style.top = 300 - (vol/2) + "px";
 
 			window.requestAnimationFrame(loop);	
 		})();
